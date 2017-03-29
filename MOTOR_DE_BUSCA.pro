@@ -4,4 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-    main.cpp
+    main.cpp \
+    dado.cpp \
+    hash.cpp
+
+HEADERS += \
+    dado.h \
+    hash.h
