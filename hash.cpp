@@ -38,13 +38,13 @@ void HASH::index()
                 }
 
                 //Soma os códigos ASCII de cada caractere da palavra
-                int n=0, somador=0;
-                while(tempString[n] != '\0' )
+                int n=0, resto=0;
+                while(tempString[n+1] != '\0' )
                 {
-                    somador+=tempString[n];
+                    resto+=tempString[n]%tempString[n+1];
                     n++;
                 }
-                cout<<"\nSTRING="<<tempString<<"\nSOMA DOS COD ASCII=\t"<<somador<<" \n\n\n";
+                cout<<"\nSTRING="<<tempString<<"\nSOMA DOS COD ASCII=\t"<<resto<<" \n\n\n";
             }
         }
     }
